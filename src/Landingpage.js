@@ -1,5 +1,6 @@
 import React from "react";
 import "./Landing.css";
+import "./Projects.css";
 import { useState } from "react";
 
 const Landingpage = () => {
@@ -11,48 +12,68 @@ const Landingpage = () => {
   const handleMouseLeave = () => {
     setisHovered(false);
   };
-  //   const handleMouseEnter = () => {
 
-  //     for(let i=1;i<=11;i++){
-  //       for(let j=1;i<=11;i++){
-  //         document.querySelector(`.text-name${i}`).style.opacity = j/10;
-  //     }
-  //   }
-  // }
+  const [isHoveredAbout, setisHoveredAbout] = useState(false);
 
-  //   const handleMouseLeave = () => {
-  //     for(let i=1;i<=11;i++){
-  //       document.querySelector(`.text-name${i}`).style.opacity = 1;}
-  //     }
+  const handleMouseEnterAbout = () => {
+    setisHoveredAbout(true);
+  };
+  const handleMouseLeaveAbout = () => {
+    setisHoveredAbout(false);
+  };
+
+  const [isHoveredProjects, setisHoveredProjects] = useState(false);
+
+  const handleMouseEnterProjects = () => {
+    setisHoveredProjects(true);
+  };
+  const handleMouseLeaveProjects = () => {
+    setisHoveredProjects(false);
+  };
+
+  const [isHoveredArchive, setisHoveredArchive] = useState(false);
+
+  const handleMouseEnterArchive = () => {
+    setisHoveredArchive(true);
+  };
+  const handleMouseLeaveArchive = () => {
+    setisHoveredArchive(false);
+  };
 
   return (
     <div className="fullscreen-box">
       <div className="navbar">
         <div
-          className={`text-name ${isHovered ? "glowing" : ""}`}
+          className={`text-name  ${isHovered ? "glowing overline" : ""}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           <span className="text-name1">A</span>
-          <span className="text-name2">j</span>
-          <span className="text-name3">a</span>
-          <span className="text-name4">y </span>
-          <span className="text-name5">S</span>
-          <span className="text-name6">a</span>
-          <span className="text-name7">t</span>
-          <span className="text-name8">h</span>
-          <span className="text-name9">v</span>
-          <span className="text-name10">i</span>
-          <span className="text-name11">k</span>
+          <span className="text-name2">J</span>
         </div>
         <div className="text-navbar">
-          <a href="#about" className="About">
+          <a
+            href="#about"
+            className={`About ${isHoveredAbout ? "glowing overline" : ""}`}
+            onMouseEnter={handleMouseEnterAbout}
+            onMouseLeave={handleMouseLeaveAbout}
+          >
             About
           </a>
-          <a href="#projects" className="Projects">
+          <a
+            href="#projects"
+            className={`Projects ${isHoveredProjects ? "glowing overline" : ""}`}
+            onMouseEnter={handleMouseEnterProjects}
+            onMouseLeave={handleMouseLeaveProjects}
+          >
             Projects
           </a>
-          <a href="#contact" className="Contact">
+          <a
+            href="#contact"
+            className={`Archive ${isHoveredArchive ? "glowing overline" : ""}`}
+            onMouseEnter={handleMouseEnterArchive}
+            onMouseLeave={handleMouseLeaveArchive}
+          >
             Archive
           </a>
         </div>
@@ -61,26 +82,20 @@ const Landingpage = () => {
       <div className="circle2 "></div>
 
       <div>
+      <span className="text-intro1">Hello; </span>
         <p className="text-intro">
-          <span className="text-intro1">HI! </span>
+          
           <br />
-          <span className="text-intro3">I'm </span>
+          <span className="text-intro3">I am </span>
           <span className="text-intro4">Ajay </span>
-          <span className="text-intro5">Sathvik &#128515;, </span>
-          <br />
+          <span className="text-intro5">Sathvik, </span>
+          {/* <br />
           <span className="text-intro15">A </span>
-          <span className="text-intro15">FullStack </span>
+          <span className="text-intro15">FullStack </span> */}
           <span className="text-intro18">BlockChain </span>
+          <span className="text-intro17">and </span>
+          <span className="text-intro16">Web </span>
           <span className="text-intro19">Developer. </span>
-          <br />
-          <span className="text-intro20">Feel </span>
-          <span className="text-intro21">free </span>
-          <span className="text-intro22">to </span>
-          <span className="text-intro23">check </span>
-          <span className="text-intro24">out </span>
-          <span className="text-intro25">My </span>
-          <span className="text-intro26">Projects </span>
-          <span className="text-intro27">below </span>
         </p>
       </div>
     </div>

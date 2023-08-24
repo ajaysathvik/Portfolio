@@ -5,11 +5,12 @@
 .box {
   background-color: transparent;
   font-size: 100px;
+  text-align: center;
 }
 
 .fullscreen-box {
   width: 98.8vw;
-  height: 98.8vh; /* 100% of the viewport height */
+  height: 96.8vh; /* 100% of the viewport height */
   border-bottom-left-radius: 20px; /* Adjust the radius for rounded corners */
   border-bottom-right-radius: 20px;
   background-color: black;
