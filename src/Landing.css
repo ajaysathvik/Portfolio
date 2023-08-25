@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
+  scroll-behavior:smooth;
+  /* transition: all 0.5s ease-in-out; */
   background-color: black;
   /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
@@ -13,7 +15,7 @@
 }
 
 .fullscreen-box {
-  width: 98.8vw;
+  width: 0vw !important;
   height: 98.8vh;
   display: flex;
   justify-content: center;
@@ -30,6 +32,7 @@
   left: 5%;
   position: fixed;
   font-weight: 900;
+  text-decoration: none;
   transition: opacity 0.5s ease-in-out;
   /* animation: name-shift 12s ease-in-out infinite; */
 }
@@ -240,7 +243,7 @@
 }
 
 .scroll-1::-webkit-scrollbar-thumb {
-  border-radius: 20px;
+  border-radius: 5px;
   background: #888;
 }
 
@@ -260,7 +263,7 @@
   position: absolute;
   top: 100%;
   scroll-snap-type: x mandatory;
-  scroll-padding-top: 24px;
+  scroll-padding-top: 2px;
   border-radius: 8px;
   gap: 20px;
 }
@@ -319,4 +322,17 @@
   100% {
     opacity: 1;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* outline: 1px dashed white; */
 }

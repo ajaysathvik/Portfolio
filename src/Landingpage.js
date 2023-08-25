@@ -2,8 +2,10 @@ import React from "react";
 import "./Landing.css";
 import "./Projects.css";
 import { useState } from "react";
+import Archive from "./Archive";
 
 const Landingpage = () => {
+
   const [isHovered, setisHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -40,21 +42,30 @@ const Landingpage = () => {
     setisHoveredArchive(false);
   };
 
+  const [isInArchive, setIsInArchive] = useState(false);
+
+  const handleArchiveClick = () => {
+    setIsInArchive(true);
+  };
+
   return (
     <div className="fullscreen-box">
       <div className="navbar">
-        <div
-          className={`text-name  ${isHovered ? "glowing overline" : ""}`}
+        <a
+          href=""
+          className={`text-name ${isHovered ? "glowing overline" : ""}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           <span className="text-name1">A</span>
           <span className="text-name2">J</span>
-        </div>
+        </a>
         <div className="text-navbar">
           <a
-            href="#about"
-            className={`About ${isHoveredAbout ? "glowing overline" : ""}`}
+            href=""
+            className={`About normalIBMPlex ${
+              isHoveredAbout ? "glowing overline" : ""
+            }`}
             onMouseEnter={handleMouseEnterAbout}
             onMouseLeave={handleMouseLeaveAbout}
           >
@@ -62,15 +73,21 @@ const Landingpage = () => {
           </a>
           <a
             href="#projects"
-            className={`Projects ${isHoveredProjects ? "glowing overline" : ""}`}
+            className={`Projects normalIBMPlex ${
+              isHoveredProjects ? "glowing overline" : ""
+            }`}
             onMouseEnter={handleMouseEnterProjects}
             onMouseLeave={handleMouseLeaveProjects}
           >
-            Projects
+            Recent Projects
           </a>
+          {isInArchive && <Archive />}
           <a
-            href="#contact"
-            className={`Archive ${isHoveredArchive ? "glowing overline" : ""}`}
+          href=""
+            onClick={handleArchiveClick}
+            className={`Archive normalIBMPlex ${
+              isHoveredArchive ? "glowing overline" : ""
+            }`}
             onMouseEnter={handleMouseEnterArchive}
             onMouseLeave={handleMouseLeaveArchive}
           >
@@ -82,22 +99,22 @@ const Landingpage = () => {
       <div className="circle2 "></div>
 
       <div>
-      <span className="text-intro1">Hello; </span>
+        <span className="text-intro1">Hello; </span>
         <p className="text-intro">
-          
           <br />
-          <span className="text-intro3">I am </span>
+          <span className="text-intro3 normalIBMPlex">I am </span>
           <span className="text-intro4">Ajay </span>
           <span className="text-intro5">Sathvik, </span>
           {/* <br />
           <span className="text-intro15">A </span>
           <span className="text-intro15">FullStack </span> */}
-          <span className="text-intro18">BlockChain </span>
-          <span className="text-intro17">and </span>
-          <span className="text-intro16">Web </span>
-          <span className="text-intro19">Developer. </span>
+          <span className="text-intro18 normalIBMPlex">BlockChain </span>
+          <span className="text-intro17 normalIBMPlex">and </span>
+          <span className="text-intro16 normalIBMPlex">Web </span>
+          <span className="text-intro19 normalIBMPlex">Developer. </span>
         </p>
       </div>
+      {/* <SocialMedia /> */}
     </div>
   );
 };
