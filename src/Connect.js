@@ -6,16 +6,20 @@ const Connect = () => {
 
   return (
     <d>
-      <div>
-        <div
+      <div className="partthree">
+      <div className="connect-box">
+          I'm Always Interested About ->
+        </div>
+        <div></div>
+        <div 
           className="connect"
           data-aos="fade-right"
-          dos-aos-duration="500"
+          dos-aos-duration="1000"
         >
           Let's <br />
           Connect
         </div>
-        <div className="connect-box"></div>
+        
       </div>
     </d>
   );

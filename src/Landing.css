@@ -6,7 +6,7 @@
   background-color: black;
   /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
-  font-family: "IBM Plex Mono", sans-serif;
+    font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
 }
 
