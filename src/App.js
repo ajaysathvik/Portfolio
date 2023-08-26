@@ -1,4 +1,5 @@
 import "./App.css";
+import Connect from "./Connect";
 import Landingpage from "./Landingpage";
 import Projects from "./Projects";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Landingpage />
       <Projects />
+      <Connect />
     </div>
   );
 }

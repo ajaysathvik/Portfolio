@@ -5,7 +5,6 @@ import { useState } from "react";
 import Archive from "./Archive";
 
 const Landingpage = () => {
-
   const [isHovered, setisHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -24,14 +23,14 @@ const Landingpage = () => {
     setisHoveredAbout(false);
   };
 
-  const [isHoveredProjects, setisHoveredProjects] = useState(false);
+  // const [isHoveredProjects, setisHoveredProjects] = useState(false);
 
-  const handleMouseEnterProjects = () => {
-    setisHoveredProjects(true);
-  };
-  const handleMouseLeaveProjects = () => {
-    setisHoveredProjects(false);
-  };
+  // const handleMouseEnterProjects = () => {
+  //   setisHoveredProjects(true);
+  // };
+  // const handleMouseLeaveProjects = () => {
+  //   setisHoveredProjects(false);
+  // };
 
   const [isHoveredArchive, setisHoveredArchive] = useState(false);
 
@@ -46,10 +45,10 @@ const Landingpage = () => {
 
   const handleMouseEnterHello = () => {
     setisHoveredHello(true);
-  }
+  };
   const handleMouseLeaveHello = () => {
     setisHoveredHello(false);
-  }
+  };
 
   const [isInArchive, setIsInArchive] = useState(false);
 
@@ -92,7 +91,7 @@ const Landingpage = () => {
           </a> */}
           {isInArchive && <Archive />}
           <a
-          href=""
+            href=""
             onClick={handleArchiveClick}
             className={`Archive normalIBMPlex ${
               isHoveredArchive ? "glowing overline" : ""
@@ -108,9 +107,13 @@ const Landingpage = () => {
       <div className="circle2 "></div>
 
       <div>
-        <span className={`text-intro1 ${
-              isHoveredHello ? "italic " : ""
-            }`} onMouseEnter={handleMouseEnterHello} onMouseLeave={handleMouseLeaveHello}>Hello; </span>
+        <span
+          className={`text-intro1 ${isHoveredHello ? "italic " : ""}`}
+          onMouseEnter={handleMouseEnterHello}
+          onMouseLeave={handleMouseLeaveHello}
+        >
+          Hello;{" "}
+        </span>
         <p className="text-intro">
           <br />
           <span className="text-intro3 normalIBMPlex">I am </span>

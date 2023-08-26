@@ -1,17 +1,16 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Projects.css";
-import  gsap from "gsap";
+import gsap from "gsap";
 
 const Projects = () => {
-  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     AOS.init();
-    
+
     const interval = setInterval(() => {
       const nextIndex = (currentIndex + 1) % 3; // Adjust this based on the number of cards
       setCurrentIndex(nextIndex);
@@ -21,7 +20,7 @@ const Projects = () => {
   }, [currentIndex]);
 
   const cardContainerStyle = {
-    transform: `translateX(-${currentIndex * 100}%)`
+    transform: `translateX(-${currentIndex * 100}%)`,
   };
 
   // useEffect(() => {
@@ -37,11 +36,11 @@ const Projects = () => {
 
   const handlemouseentercard1 = () => {
     setStatemouseincard1(true);
-  }
+  };
 
   const handlemouseleavecard1 = () => {
     setStatemouseincard1(false);
-  }
+  };
 
   // useEffect(() => {
   //   if (statemouseincard1) {
@@ -79,11 +78,11 @@ const Projects = () => {
 
   const handlemouseentercard2 = () => {
     setStatemouseincard2(true);
-  }
+  };
 
   const handlemouseleavecard2 = () => {
     setStatemouseincard2(false);
-  }
+  };
 
   useEffect(() => {
     if (statemouseincard2) {
@@ -107,11 +106,11 @@ const Projects = () => {
 
   const handlemouseentercard3 = () => {
     setStatemouseincard3(true);
-  }
+  };
 
   const handlemouseleavecard3 = () => {
     setStatemouseincard3(false);
-  }
+  };
 
   useEffect(() => {
     if (statemouseincard3) {
@@ -131,19 +130,19 @@ const Projects = () => {
     }
   }, [statemouseincard3]);
 
-
   return (
     <div>
       <br />
-      <div className="box" id="projects"></div>
-      <div className="box" 
-       data-aos="fade-up" dos-aos-duration="500"
-      >
+      <div className="box" data-aos="fade-right" dos-aos-duration="500">
         Recent Projects
       </div>
-      <div dos-aos="zoom-out" >
+      <div dos-aos="zoom-out">
         <div className="container scroll ">
-          <div className="card card1" onMouseEnter={handlemouseentercard1} onMouseLeave={handlemouseleavecard1}>
+          <div
+            className="card card1"
+            onMouseEnter={handlemouseentercard1}
+            onMouseLeave={handlemouseleavecard1}
+          >
             <div className="card__image"></div>
             <div className="card__content">
               <span className="card__title normalIBMPlex">Coming Soon</span>
@@ -152,7 +151,11 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <div className="card card2" onMouseEnter={handlemouseentercard2} onMouseLeave={handlemouseleavecard2}>
+          <div
+            className="card card2"
+            onMouseEnter={handlemouseentercard2}
+            onMouseLeave={handlemouseleavecard2}
+          >
             <div className="card__image"></div>
             <div className="card__content">
               <span className="card__title normalIBMPlex">Nothing Here</span>
@@ -161,7 +164,11 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <div className="card card3" onMouseEnter={handlemouseentercard3} onMouseLeave={handlemouseleavecard3}>
+          <div
+            className="card card3"
+            onMouseEnter={handlemouseentercard3}
+            onMouseLeave={handlemouseleavecard3}
+          >
             <div className="card__image"></div>
             <div className="card__content">
               <span className="card__title normalIBMPlex">Nothing Here</span>

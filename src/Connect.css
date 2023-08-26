@@ -1,0 +1,33 @@
+* {
+  color: white;
+}
+
+.connect {
+  position: absolute;
+  top: 220%;
+  width: 30vw;
+  display: flex;
+  font-size: 200px;
+  font-weight: 100;
+  background-color: transparent;
+}
+
+.connect-box{
+    position: absolute;
+    left: 1%;
+    top: 260%;
+    width: 98vw;
+    height: 27vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: tomato;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+over-connect{
+    position: absolute;
+    top: 300%;
+    left: 1%;
+}

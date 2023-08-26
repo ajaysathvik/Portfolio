@@ -26,9 +26,9 @@
 .text-name {
   background-color: transparent;
   color: white;
-  font-size: 60px;
+  font-size: 100px;
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 5%;
   position: fixed;
   font-weight: 900;
