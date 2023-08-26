@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./Projects.css";
+import  gsap from "gsap";
 
 const Projects = () => {
   
@@ -23,6 +24,113 @@ const Projects = () => {
     transform: `translateX(-${currentIndex * 100}%)`
   };
 
+  // useEffect(() => {
+  //   gsap.from(".card", {
+  //     opacity: 1,
+  //     y: 50,
+  //     stagger: 0.2,
+  //     duration: 10,
+  //   });
+  // }, []);
+
+  const [statemouseincard1, setStatemouseincard1] = useState(false);
+
+  const handlemouseentercard1 = () => {
+    setStatemouseincard1(true);
+  }
+
+  const handlemouseleavecard1 = () => {
+    setStatemouseincard1(false);
+  }
+
+  // useEffect(() => {
+  //   if (statemouseincard1) {
+  //     let timeline = gsap.timeline();
+  //     timeline.to(
+  //       ".card1",
+  //       {
+  //         duration: 0.3,
+  //         flex: "0 0 100%",
+  //         width: "100vw",
+  //       }
+  //     );
+  //   }
+  // }, [statemouseincard1]);
+
+  useEffect(() => {
+    if (statemouseincard1) {
+      let timeline = gsap.timeline();
+      timeline.to(".card1", {
+        duration: 0.3,
+        flex: "0 0 60%",
+        width: "100vw",
+      });
+    } else {
+      let timeline = gsap.timeline();
+      timeline.to(".card1", {
+        duration: 0.3,
+        flex: "0 0 33.33%", // Adjust based on your layout
+        width: "initial",
+      });
+    }
+  }, [statemouseincard1]);
+
+  const [statemouseincard2, setStatemouseincard2] = useState(false);
+
+  const handlemouseentercard2 = () => {
+    setStatemouseincard2(true);
+  }
+
+  const handlemouseleavecard2 = () => {
+    setStatemouseincard2(false);
+  }
+
+  useEffect(() => {
+    if (statemouseincard2) {
+      let timeline = gsap.timeline();
+      timeline.to(".card2", {
+        duration: 0.3,
+        flex: "0 0 60%",
+        width: "100vw",
+      });
+    } else {
+      let timeline = gsap.timeline();
+      timeline.to(".card2", {
+        duration: 0.3,
+        flex: "0 0 33.33%", // Adjust based on your layout
+        width: "initial",
+      });
+    }
+  }, [statemouseincard2]);
+
+  const [statemouseincard3, setStatemouseincard3] = useState(false);
+
+  const handlemouseentercard3 = () => {
+    setStatemouseincard3(true);
+  }
+
+  const handlemouseleavecard3 = () => {
+    setStatemouseincard3(false);
+  }
+
+  useEffect(() => {
+    if (statemouseincard3) {
+      let timeline = gsap.timeline();
+      timeline.to(".card3", {
+        duration: 0.3,
+        flex: "0 0 60%",
+        width: "100vw",
+      });
+    } else {
+      let timeline = gsap.timeline();
+      timeline.to(".card3", {
+        duration: 0.3,
+        flex: "0 0 33.33%", // Adjust based on your layout
+        width: "initial",
+      });
+    }
+  }, [statemouseincard3]);
+
 
   return (
     <div>
@@ -33,9 +141,9 @@ const Projects = () => {
       >
         Recent Projects
       </div>
-      <div className="fullscreen-box projects" dos-aos="zoom-out" >
-        <div className="container scroll">
-          <div className="card">
+      <div dos-aos="zoom-out" >
+        <div className="container scroll ">
+          <div className="card card1" onMouseEnter={handlemouseentercard1} onMouseLeave={handlemouseleavecard1}>
             <div className="card__image"></div>
             <div className="card__content">
               <span className="card__title normalIBMPlex">Coming Soon</span>
@@ -44,7 +152,16 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <div className="card ">
+          <div className="card card2" onMouseEnter={handlemouseentercard2} onMouseLeave={handlemouseleavecard2}>
+            <div className="card__image"></div>
+            <div className="card__content">
+              <span className="card__title normalIBMPlex">Nothing Here</span>
+              <p className="card__describe normalIBMPlex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div className="card card3" onMouseEnter={handlemouseentercard3} onMouseLeave={handlemouseleavecard3}>
             <div className="card__image"></div>
             <div className="card__content">
               <span className="card__title normalIBMPlex">Nothing Here</span>
@@ -56,7 +173,7 @@ const Projects = () => {
           <div className="card">
             <div className="card__image"></div>
             <div className="card__content">
-              <span className="card__title normalIBMPlex">Nothing Here</span>
+              <span className="card__title normalIBMPlex">Wait </span>
               <p className="card__describe normalIBMPlex">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>

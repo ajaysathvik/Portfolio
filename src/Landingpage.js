@@ -42,6 +42,15 @@ const Landingpage = () => {
     setisHoveredArchive(false);
   };
 
+  const [isHoveredHello, setisHoveredHello] = useState(false);
+
+  const handleMouseEnterHello = () => {
+    setisHoveredHello(true);
+  }
+  const handleMouseLeaveHello = () => {
+    setisHoveredHello(false);
+  }
+
   const [isInArchive, setIsInArchive] = useState(false);
 
   const handleArchiveClick = () => {
@@ -71,7 +80,7 @@ const Landingpage = () => {
           >
             About
           </a>
-          <a
+          {/* <a
             href="#projects"
             className={`Projects normalIBMPlex ${
               isHoveredProjects ? "glowing overline" : ""
@@ -80,7 +89,7 @@ const Landingpage = () => {
             onMouseLeave={handleMouseLeaveProjects}
           >
             Recent Projects
-          </a>
+          </a> */}
           {isInArchive && <Archive />}
           <a
           href=""
@@ -99,7 +108,9 @@ const Landingpage = () => {
       <div className="circle2 "></div>
 
       <div>
-        <span className="text-intro1">Hello; </span>
+        <span className={`text-intro1 ${
+              isHoveredHello ? "italic " : ""
+            }`} onMouseEnter={handleMouseEnterHello} onMouseLeave={handleMouseLeaveHello}>Hello; </span>
         <p className="text-intro">
           <br />
           <span className="text-intro3 normalIBMPlex">I am </span>
