@@ -4,7 +4,7 @@
 
 .connect {
   position: absolute;
-  top: 245%;
+  top: 265%;
   padding-left: 1%;
   width: 98vw;
   height: 38vh;
@@ -27,8 +27,72 @@
   font-size: 30px;
 }
 
-over-connect {
+/* over-connect {
   position: absolute;
   top: 300%;
   left: 1%;
+} */
+
+.interest{
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  font-size: 30px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.ui{
+  width: 225px;
+  height: 35px;
+  top:230%;
+  left: 65%;
+}
+
+
+.front{
+  top: 230%;
+  left: 77%;
+}
+
+.blockchain{
+  top: 236%;
+  left: 69%;
+}
+
+.startup{
+  top: 242%;
+  left: 72%;
+}
+
+.anime{
+  top: 242%;
+  left: 65%;
+}
+
+.gaming{
+  top: 242%;
+  left: 81%;  
+}
+
+.anime:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0px, 0px) ;
+  }
+  50% {
+    transform: translate(5px, 0%) ;
+  }
+  100% {
+    transform: translate(10px, 0px) ;
+  }
 }

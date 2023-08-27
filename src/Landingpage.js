@@ -112,7 +112,7 @@ const Landingpage = () => {
           onMouseEnter={handleMouseEnterHello}
           onMouseLeave={handleMouseLeaveHello}
         >
-          Hello;{" "}
+          Hello;
         </span>
         <p className="text-intro">
           <br />
