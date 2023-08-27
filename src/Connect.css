@@ -27,14 +27,8 @@
   font-size: 30px;
 }
 
-/* over-connect {
-  position: absolute;
-  top: 300%;
-  left: 1%;
-} */
-
 .interest{
-  border: 1px solid white;
+  border: 0.1px solid white;
   border-radius: 20px;
   position: absolute;
   font-size: 30px;
@@ -79,20 +73,69 @@
 }
 
 .anime:hover{
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  animation: rotate 1s infinite;
+  border: 0px transparent;
+  position: absolute;
+  top: 242.1%;
+  left: 65.05%;
+  background-image: linear-gradient(to right, #2E3192 0%, #1BFFFF 100%);
 }
 
-@keyframes rotate {
-  0% {
-    transform: translate(0px, 0px) ;
-  }
-  50% {
-    transform: translate(5px, 0%) ;
-  }
-  100% {
-    transform: translate(10px, 0px) ;
-  }
+.gaming:hover{
+  border: 0px transparent;
+  position: absolute;
+  top: 242.1%;
+  left: 81.05%;
+  background-image: linear-gradient(to right, #EE9CA7 0%, #FFDDE1 100%);
+}
+
+.startup:hover{
+  border: 0px transparent;
+  position: absolute;
+  top: 242.1%;
+  left: 72.05%;
+  background-image: linear-gradient(to right, #C6EA8D 0%, #FE90AF 100%);
+}
+
+.blockchain:hover{
+  border: 0px transparent;
+  position: absolute;
+  top: 236.1%;
+  left: 69.05%;
+  background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
+}
+
+.front:hover{
+  border: 0px transparent;
+  position: absolute;
+  top: 230.1%;
+  left: 77.05%;
+  background-image: linear-gradient(to right, #93A5CF 0%, #E4EfE9 100%);
+}
+
+.front:hover ~ .ui,
+.front:hover ~ .anime,
+.front:hover ~ .blockchain,
+.front:hover ~ .startup,
+.front:hover ~ .gaming {
+  border: 0px transparent;
+  position: absolute;
+  background-image: linear-gradient(to right, #93A5CF 0%, #E4EfE9 100%);
+}
+
+.ui:hover{
+  border: 0px transparent;
+  position: absolute;
+  top: 230.1%;
+  left: 65.05%;
+  background-image: linear-gradient(to right, #00DBDE 0%, #FCB69F 100%);
+}
+
+.ui:hover ~ .front,
+.ui:hover ~ .anime,
+.ui:hover ~ .blockchain,
+.ui:hover ~ .startup,
+.ui:hover ~ .gaming {
+  border: 0px transparent;
+  position: absolute;
+  background-image: linear-gradient(to right, #00DBDE 0%, #FCB69F 100%);
 }
