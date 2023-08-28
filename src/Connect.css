@@ -1,3 +1,5 @@
+@import "Landing.css";
+
 * {
   color: white;
 }
@@ -7,7 +9,7 @@
   top: 265%;
   padding-left: 1%;
   width: 98vw;
-  height: 38vh;
+  height: 37vh;
   display: flex;
   flex-direction: column-reverse;
   font-size: 200px;
@@ -112,30 +114,47 @@
   background-image: linear-gradient(to right, #93A5CF 0%, #E4EfE9 100%);
 }
 
-.front:hover ~ .ui,
-.front:hover ~ .anime,
-.front:hover ~ .blockchain,
-.front:hover ~ .startup,
-.front:hover ~ .gaming {
-  border: 0px transparent;
-  position: absolute;
-  background-image: linear-gradient(to right, #93A5CF 0%, #E4EfE9 100%);
-}
-
 .ui:hover{
   border: 0px transparent;
   position: absolute;
   top: 230.1%;
   left: 65.05%;
   background-image: linear-gradient(to right, #00DBDE 0%, #FCB69F 100%);
+  animation: whole-box-color 1s infinite;
 }
 
-.ui:hover ~ .front,
-.ui:hover ~ .anime,
-.ui:hover ~ .blockchain,
-.ui:hover ~ .startup,
-.ui:hover ~ .gaming {
-  border: 0px transparent;
+@keyframes whole-box-color{
+  0%{
+    
+  }
+}
+
+.whole-box{
   position: absolute;
-  background-image: linear-gradient(to right, #00DBDE 0%, #FCB69F 100%);
+  top: 215.1%;
+  left: 1%;
+  width: 98vw;
+  height: 43.8vw;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.github{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 286.3%;
+  left: 65%;
+  /* border: 1px solid white; */
+}
+
+.instagram{
+  width: 150px;
+  height: 130px;
+  position: absolute;
+  top: 286.3%;
+  left: 72%;
+  background-color: white ;
+  /* border: 1px solid white; */
+  object-fit: cover;
 }
