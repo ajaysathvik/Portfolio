@@ -123,12 +123,6 @@
   animation: whole-box-color 1s infinite;
 }
 
-@keyframes whole-box-color{
-  0%{
-    
-  }
-}
-
 .whole-box{
   position: absolute;
   top: 215.1%;

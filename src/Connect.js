@@ -11,36 +11,60 @@ const Connect = () => {
     document.body.style.backgroundColor = "white";
   }
   
-  var uibordercolorA = " #00DBDE" ;
-  var uibordercolorJ = "#FCB69F" ;
-  var uiborderwidth = "1px";
-  var uiborderstyle = "solid";
+  var uicolorA = " #00DBDE" ;
+  var uicolorJ = "#FCB69F" ;
+  var frontcolorA = "#93A5CF";
+  var frontcolorJ = "#E4EfE9";
+  var blockchaincolorA = "#C33764";
+  var blockchaincolorJ = "#1D2671";
+  var gamingcolorA = "#EE9CA7";
+  var gamingcolorJ = "#FFDDE1";
+  var startupcolorA = "#C6EA8D";
+  var startupcolorJ = "#FE90AF";
+  var animecolorA = "#2E3192";
+  var animecolorJ = "#1BFFFF";  
 
   return (
     <d>
       <div className="partthree">
         <div className="whole-box" id="whole-box"></div>
         <div className="connect-box">I'm Always Interested About -&gt;</div>
-        <div className="connect" data-aos="fade-right" dos-aos-duration="1000">
+        <div className="connect" id="connect" data-aos="fade-right" dos-aos-duration="1000">
           Let's <br />
           Connect
         </div>
         <div className="interest ui" data-aos="fade-up" data-aos-delay="300" onMouseEnter={()=>{
-          document.getElementById("whole-box").style.borderBlockStartColor =`${uibordercolorA}`;
-          document.getElementById("text-name2").style.color=`${uibordercolorJ}`;}}
+          document.getElementById("text-name1").style.color =`${uicolorA}`;
+          document.getElementById("text-name2").style.color=`${uicolorJ}`;}}
           onMouseLeave={()=>{
             document.getElementById("text-name1").style.color=`white`;
           document.getElementById("text-name2").style.color=`white`;}}
         >
           UX/UI DESIGN
         </div>
-        <div className="interest front" data-aos="fade-up" data-aos-delay="450">
+        <div className="interest front" data-aos="fade-up" data-aos-delay="450"
+          onMouseEnter={()=>{
+            document.getElementById("text-name1").style.color=`${frontcolorA}`;
+          document.getElementById("text-name2").style.color=`${frontcolorJ}`;
+          }}
+          onMouseLeave={()=>{
+            document.getElementById("text-name1").style.color=`white`;
+          document.getElementById("text-name2").style.color=`white`;}}
+        >
           FRONTEND DEVELOPMENT{" "}
         </div>
         <div
           className="interest blockchain"
           data-aos="fade-up"
           data-aos-delay="600"
+          onMouseEnter={()=>{
+            document.getElementById("text-name1").style.color=`${blockchaincolorA}`;
+          document.getElementById("text-name2").style.color=`${blockchaincolorJ}`;
+          }
+          }
+          onMouseLeave={()=>{
+            document.getElementById("text-name1").style.color=`white`;
+          document.getElementById("text-name2").style.color=`white`;}}
         >
           BLOCKCHAIN DEVELOPMENT{" "}
         </div>
@@ -48,6 +72,15 @@ const Connect = () => {
           className="interest gaming"
           data-aos="fade-up"
           data-aos-delay="1050"
+          onMouseEnter={()=>{
+            document.getElementById("text-name1").style.color=`${gamingcolorA}`;
+          document.getElementById("text-name2").style.color=`${gamingcolorJ}`;
+          }
+          }
+          onMouseLeave={()=>{
+            document.getElementById("text-name1").style.color=`white`;
+          document.getElementById("text-name2").style.color=`white`;}
+          }
         >
           Gaming{" "}
         </div>
@@ -55,11 +88,25 @@ const Connect = () => {
           className="interest startup"
           data-aos="fade-up"
           data-aos-delay="900"
+          onMouseEnter={()=>{
+            document.getElementById("text-name1").style.color=`${startupcolorA}`;
+          document.getElementById("text-name2").style.color=`${startupcolorJ}`;
+          }}
+          onMouseLeave={()=>{
+            document.getElementById("text-name1").style.color=`white`;
+          document.getElementById("text-name2").style.color=`white`;}}
         >
           STARTUPS{" "}
         </div>
         <div className="interest anime" 
          data-aos="fade-up" data-aos-delay="750"
+          onMouseEnter={()=>{
+            document.getElementById("text-name1").style.color=`${animecolorA}`;
+          document.getElementById("text-name2").style.color=`${animecolorJ}`;
+          }}
+          onMouseLeave={()=>{
+            document.getElementById("text-name1").style.color=`white`;
+          document.getElementById("text-name2").style.color=`white`;}}
          >
           ANIME{" "}
         </div>
