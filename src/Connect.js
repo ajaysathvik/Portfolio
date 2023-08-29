@@ -2,7 +2,7 @@ import React from "react";
 import "./Connect.css";
 import { useState } from "react";
 import github from "./assests/github-mark-white.png";
-import instagram from "./assests/instagram-logo.png"
+import instagram from "./assests/v982-d3-04-removebg.png"
 
 const Connect = () => {
   const [isHoveredAnime, setisHoveredAnime] = useState(false);
