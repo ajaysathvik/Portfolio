@@ -29,7 +29,7 @@
   font-size: 30px;
 }
 
-.interest{
+.interest {
   border: 0.1px solid white;
   border-radius: 20px;
   position: absolute;
@@ -41,89 +41,88 @@
   overflow-y: hidden;
 }
 
-.ui{
+.ui {
   width: 225px;
   height: 35px;
-  top:230%;
+  top: 230%;
   left: 65%;
 }
 
-
-.front{
+.front {
   top: 230%;
   left: 77%;
 }
 
-.blockchain{
+.blockchain {
   top: 236%;
   left: 69%;
 }
 
-.startup{
+.startup {
   top: 242%;
   left: 72%;
 }
 
-.anime{
+.anime {
   top: 242%;
   left: 65%;
 }
 
-.gaming{
+.gaming {
   top: 242%;
-  left: 81%;  
+  left: 81%;
 }
 
-.anime:hover{
+.anime:hover {
   border: 0px transparent;
   position: absolute;
   top: 242.1%;
   left: 65.05%;
-  background-image: linear-gradient(to right, #2E3192 0%, #1BFFFF 100%);
+  background-image: linear-gradient(to right, #2e3192 0%, #1bffff 100%);
 }
 
-.gaming:hover{
+.gaming:hover {
   border: 0px transparent;
   position: absolute;
   top: 242.1%;
   left: 81.05%;
-  background-image: linear-gradient(to right, #EE9CA7 0%, #FFDDE1 100%);
+  background-image: linear-gradient(to right, #ee9ca7 0%, #ffdde1 100%);
 }
 
-.startup:hover{
+.startup:hover {
   border: 0px transparent;
   position: absolute;
   top: 242.1%;
   left: 72.05%;
-  background-image: linear-gradient(to right, #C6EA8D 0%, #FE90AF 100%);
+  background-image: linear-gradient(to right, #c6ea8d 0%, #fe90af 100%);
 }
 
-.blockchain:hover{
+.blockchain:hover {
   border: 0px transparent;
   position: absolute;
   top: 236.1%;
   left: 69.05%;
-  background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
+  background-image: linear-gradient(to right, #c33764 0%, #1d2671 100%);
 }
 
-.front:hover{
+.front:hover {
   border: 0px transparent;
   position: absolute;
   top: 230.1%;
   left: 77.05%;
-  background-image: linear-gradient(to right, #93A5CF 0%, #E4EfE9 100%);
+  background-image: linear-gradient(to right, #93a5cf 0%, #e4efe9 100%);
 }
 
-.ui:hover{
+.ui:hover {
   border: 0px transparent;
   position: absolute;
   top: 230.1%;
   left: 65.05%;
-  background-image: linear-gradient(to right, #00DBDE 0%, #FCB69F 100%);
+  background-image: linear-gradient(to right, #00dbde 0%, #fcb69f 100%);
   animation: whole-box-color 1s infinite;
 }
 
-.whole-box{
+.whole-box {
   position: absolute;
   top: 215.1%;
   left: 1%;
@@ -133,21 +132,44 @@
   border-radius: 20px;
 }
 
-.github{
+.github {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 286.3%;
+  top: 286.6%;
   left: 65%;
+  opacity: 1;
   /* border: 1px solid white; */
 }
 
-.instagram{
+.github:hover + .instagram {
+  opacity: 0;
+}
+
+.instagram {
   width: 220px;
   height: 220px;
   position: absolute;
   top: 284.3%;
   left: 72%;
-  background-color: transparent; ;
+  background-color: transparent;
   object-fit: cover;
+}
+
+.spotify {
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  top: 287%;
+  left: 82%;
+  /* border: 1px solid white; */
+}
+
+.dribble {
+  width: 194px;
+  height: 194px;
+  position: absolute;
+  top: 285.9%;
+  left: 89.7%;
+  background-color: transparent;
 }

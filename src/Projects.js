@@ -132,7 +132,6 @@ const Projects = () => {
 
   return (
     <div>
-      <br />
       <div className="box" data-aos="fade-up" dos-aos-duration="500">
         Recent Projects
       </div>

@@ -7,18 +7,17 @@
   font-size: 160px;
   font-weight: 100;
   text-align: center;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .normalIBMPlex {
-  font-family: 'JetBrains Mono', monospace;
-    font-weight: normal;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: normal;
 }
 
 .scroll {
   overflow-x: hidden;
   background-color: black !important;
-
 }
 
 /* .scroll-1::-webkit-scrollbar {

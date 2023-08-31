@@ -60,14 +60,18 @@ const Landingpage = () => {
     <div className="fullscreen-box">
       <div className="navbar">
         <a
-        id="name"
+          id="name"
           href=""
           className={`text-name ${isHovered ? "glowing overline" : ""}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <span className="text-name1" id="text-name1">A</span>
-          <span className="text-name2" id="text-name2">J</span>
+          <span className="text-name1" id="text-name1">
+            A
+          </span>
+          <span className="text-name2" id="text-name2">
+            J
+          </span>
         </a>
         <div className="text-navbar">
           <a
